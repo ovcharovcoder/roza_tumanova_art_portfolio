@@ -524,7 +524,7 @@ body {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #aaa;
+  color: #d7d7d7;
   margin-bottom: 6px;
 }
 .info-value {
@@ -633,7 +633,7 @@ body {
 }
 
 .footer-logo a {
-  color: #aaa;
+  color: #d7d7d7;
 }
 
 .footer-logo span {
@@ -649,7 +649,7 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #aaa;
+  color: #d7d7d7;
   transition: color 0.3s;
   cursor: pointer;
 }
@@ -665,7 +665,7 @@ body {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: #aaa;
+  color: #d7d7d7;
   font-size: 0.8rem;
   transition: all 0.3s;
 }
