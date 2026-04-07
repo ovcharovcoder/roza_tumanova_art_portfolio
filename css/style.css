@@ -279,9 +279,6 @@ body {
   flex: 2;
 }
 
-.profile-bio_wrapper {
-  max-width: 580px;
-}
 .profile-bio h3 {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -293,7 +290,6 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #3a3a3a;
-  max-width: 75%;
   padding-bottom: 1rem;
 }
 .profile-credo {
