@@ -17,15 +17,10 @@ a:active {
 }
 
 body {
-  font-family:
-    'Inter',
-    -apple-system,
-    BlinkMacSystemFont,
-    'SF Pro Text',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #fcf9f5;
   color: #1a1a1a;
+  font-size: 1rem;
   line-height: 1.4;
   scroll-behavior: smooth;
 }
@@ -274,7 +269,6 @@ body {
   margin-bottom: 16px;
 }
 .profile-bio p {
-  font-size: 1.1rem;
   line-height: 1.6;
   color: #3a3a3a;
   padding-bottom: 1rem;
@@ -283,8 +277,8 @@ body {
   flex: 1;
 }
 .profile-credo p {
-  font-size: 1.2rem;
-  font-style: italic;
+  font-family: 'Bad Script', cursive;
+  font-size: 24px;
   color: #c14b49;
   font-weight: 350;
 }
@@ -720,9 +714,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
   gap: 20px;
 }
+
+.section-subtitle {
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(139, 139, 139);
+}
+
 .section-title {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -799,6 +801,8 @@ body {
 }
 
 /* ========== АДАПТИВ (ПРАВИЛЬНА МОБІЛЬНА ВЕРСІЯ) ========== */
+
+/* Планшети (1100px і менше) */
 @media (max-width: 1100px) {
   .container {
     padding: 0 30px;
@@ -817,6 +821,7 @@ body {
   }
 }
 
+/* Планшети (900px і менше) */
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -849,9 +854,21 @@ body {
   .footer-social {
     justify-content: center;
   }
+
+  /* Слайдер-гармошка */
+  .accordion-slider {
+    height: 400px;
+    gap: 16px;
+  }
+  .accordion-location {
+    font-size: 1rem;
+  }
+  .accordion-overlay {
+    padding: 18px 16px;
+  }
 }
 
-/* ========== ОСНОВНІ МОБІЛЬНІ СТИЛІ (до 768px) ========== */
+/* Мобільні пристрої (768px і менше) */
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
@@ -1026,6 +1043,40 @@ body {
   }
 }
 
+/* Маленькі планшети (680px і менше) */
+@media (max-width: 680px) {
+  .accordion-slider {
+    height: 320px;
+    gap: 6px;
+  }
+  .accordion-overlay {
+    padding: 12px 12px;
+  }
+  .accordion-location {
+    font-size: 0.85rem;
+  }
+  .accordion-category {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+  .accordion-slider-section {
+    margin: 40px 0;
+  }
+  .accordion-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      transparent 100%
+    );
+    padding-top: 40px;
+  }
+}
+
+/* Мобільні (600px і менше) */
 @media (max-width: 600px) {
   .hero,
   .profile-section {
@@ -1051,6 +1102,7 @@ body {
   }
 }
 
+/* Дуже маленькі мобільні (500px і менше) */
 @media (max-width: 500px) {
   .filter-bar {
     flex-direction: column;
@@ -1064,34 +1116,42 @@ body {
   }
 }
 
-@media (max-width: 900px) {
-  .accordion-slider {
-    height: 400px;
-    gap: 16px;
+/* Найменші мобільні (480px і менше) */
+@media (max-width: 480px) {
+  .header {
+    padding-bottom: 20px;
   }
-  .accordion-location {
-    font-size: 1rem;
+  .hero {
+    gap: 40px;
   }
-  .accordion-overlay {
-    padding: 18px 16px;
+
+  .hero-name {
+    margin-bottom: 8px;
   }
-}
-@media (max-width: 680px) {
-  .accordion-slider {
-    height: 320px;
-    gap: 6px;
+  .hero-quote {
+    margin-bottom: 40px;
   }
-  .accordion-overlay {
-    padding: 12px 12px;
-  }
-  .accordion-location {
-    font-size: 0.85rem;
-  }
-  .accordion-category {
-    font-size: 0.6rem;
-    letter-spacing: 2px;
+  .fresh-footage {
+    flex-direction: column;
+    margin-bottom: 20px;
   }
   .section-title {
-    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .profile-bio p {
+    padding-block: 0;
+  }
+  .fresh-footage .section-title {
+    margin-bottom: 0;
+  }
+  .section-header {
+    gap: 8px;
+  }
+  .filter-wrapper {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .profile-section {
+    gap: 8px;
   }
 }
