@@ -6,6 +6,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Роза Туманова | Фотографка та візуальна мисткиня</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -52,7 +58,9 @@
             src="images/avatar.webp"
             alt="Роза Туманова"
             class="hero-image"
-            onerror="this.src='https://placehold.co/800x1000/f0ede8/8b6b5c?text=РОЗА'"
+            onerror="
+              this.src = 'https://placehold.co/800x1000/f0ede8/8b6b5c?text=РОЗА'
+            "
           />
         </div>
       </div>
@@ -79,8 +87,9 @@
 
       <!-- СЛАЙДЕР-ГАРМОШКА (ФІКСОВАНА ВИСОТА - БЕЗ РИВКІВ) -->
       <div class="accordion-slider-section">
-        <div class="section-header">
+        <div class="section-header fresh-footage">
           <h2 class="section-title">Свіжі <span>кадри</span></h2>
+          <h3 class="section-subtitle">Найновіші зйомки та проєкти</h3>
         </div>
         <div class="accordion-slider" id="accordionSlider"></div>
       </div>
